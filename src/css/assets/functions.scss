@@ -1,0 +1,18 @@
+@function decimal_digits_trim($decimal, $digits_count: 2){
+	@if($digits_count < 0){
+		@error "Digits count cannot be less than zero";
+	}
+
+	$pow: 1;
+	$i: 0;
+	@while $i < $digits_count {
+		$pow: $pow * 10;
+		$i: $i + 1;
+	}
+
+	@return round($decimal * $pow) / $pow;
+}
+
+@function px_to_em($px, $em_px: 16) {
+	@return decimal_digits_trim($px / $em_px) * 1em;
+}

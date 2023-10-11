@@ -1,0 +1,30 @@
+@mixin modal-module{
+	// MODAL
+	.modal{
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 100%;
+		width: 100%;
+		z-index: 5;
+		background: rgba(255, 255, 255, 0.7);
+		opacity: 0;
+		pointer-events: none;
+		transition: all 0.4s;
+		&__window{
+			position: absolute !important;
+			top: 50px;
+			left: 50%;
+			width: 80%;
+			background: #fff;
+			padding: 4%;
+			transform: translateX(-50%);
+			border-radius: 6px;
+			box-shadow: 0px 4px 20px rgba(198, 210, 216, 0.44);
+		}
+		&--show{
+			opacity: 1;
+			pointer-events: auto;
+		}
+	}
+}

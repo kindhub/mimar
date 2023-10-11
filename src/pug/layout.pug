@@ -1,0 +1,19 @@
+include ./mixins
+
+link(href="/css/main.css" rel="stylesheet")
+link(href="/css/media.css" rel="stylesheet")
+
+.wrapper
+	block content
+
+if templateType === "page"
+	#tmpl-hh__vacancies-block.vacancies
+		div
+			<hht:employer-insider xmlns:hht="http://hh.ru/development/hht"/>
+		h3.b-subtitle.b-employerpage-vacancies-title
+			| Вакансии компании «<hht:employer-title/>»
+			<hht:employer-confirmed/>
+		<hht:vacancies filtered="true"/>
+
+script(src="/js/libs/swiper.min.js")
+script(src="/js/script.js")

@@ -1,0 +1,35 @@
+mixin icon(id, className)
+	svg(xmlns:xlink="http://www.w3.org/1999/xlink" class=className)
+		use(xlink:href="#tmpl-hh__icon-" + id href="#tmpl-hh__icon-" + id)
+
+mixin video(video, thumbnail, source="youtube")
+	.video(data-video-id=video data-video-source=source)
+		img.video__preview(src=thumbnail)
+		.video__play-btn
+			+icon('play-btn')
+
+mixin image-block(icon, text) 
+	.image-block
+		.image-block__icon-container
+			img.image-block__icon(src=icon)
+		.image-block__text!=text
+
+mixin image-titled-block(icon, title, text) 
+	.image-titled-block
+		.image-titled-block__icon-container
+			img.image-titled-block__icon(src=icon)
+		.image-titled-block__title!=title
+		.image-titled-block__text!=text
+
+mixin icon-card(icon,text)
+	.icon-card
+		.icon-card__container
+			+icon(icon, "icon-card__icon")
+		.icon-card__title!=text
+
+mixin icon-titled-card(icon, title, text)
+	.icon-titled-card
+		.icon-titled-card__icon-container
+			+icon(icon, "icon-card__icon")
+		.icon-titled-card__title!=title
+		.icon-titled-card__text!=text

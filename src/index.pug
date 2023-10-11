@@ -1,0 +1,718 @@
+extends ./pug/layout
+
+block content
+	<!-- START HEADER -->
+	.header
+		.container
+			.header__inner
+				a.header__logo.content-tab(href="#home")
+					img.header__logo-img(src="images/logo.svg" alt="")
+				.header__nav.nav
+					a.nav__item.content-tab(href="#about") О компании
+					a.nav__item.content-tab(href="#values") Ценности
+					a.nav__item.content-tab(href="#career") Карьера
+					a.nav__item.content-tab(href="#program") MIMAR GRADUATE PROGRAM
+					a.nav__item Вакансии 
+					a.nav__item.content-tab(href="https://www.vtb-bank.kz/" target="_blank") mimar.uz
+				.nav-btn
+					.nav-btn__line
+					.nav-btn__line
+					.nav-btn__line
+	<!-- END HEADER -->
+
+	<!-- START CONTENT HOME -->
+	.content.content--active.content--opacity-1.content__home
+		<!-- START SECTION FIRST-SCREEN -->
+		.section.s-first-screen
+			.container
+				.s-first-screen__inner
+					.s-first-screen__content
+						.img-links 
+							a.img-links-link.img-links-link--about.content-tab(href="#about")
+								//- img(src="about.svg")								
+								.img-links-text.img-links-text--about 
+									p О компании
+							a.img-links-link.img-links-link--values.content-tab(href="#values")
+								svg(fill="none" version="1.1" viewBox="0 0 224 124" xmlns="http://www.w3.org/2000/svg")
+									path.values-svg-cle(d="m108.36 42.108-30.117 23.18 30.117 17.38-30.117 17.38h70.264l30.116-17.38-70.263-40.56z" fill="url(#paint0_linear_20_89)")
+									path.values-svg(d="m196.83 42.829-13.172 7.6037 13.172 7.6094-13.172 7.6036h26.349l13.177-7.6036-26.354-15.213z" fill="url(#paint1_linear_20_89)" opacity=".4")
+									path.values-svg(d="m130.95 20.012 52.709 30.426v15.207l-52.709-30.42v-15.213z" fill="#B0D1BF")
+									path.values-svg(d="m65.071 42.829 13.178 7.6095v15.207l-13.178-7.6036v-15.213z" fill="#97C7DB")
+									path.values-svg(d="m78.248 50.438 52.704-30.426v15.213l-52.704 30.42v-15.207z" fill="#4A896D")
+									path.values-svg(d="m183.66 50.438 13.172-7.6095v15.213l-13.172 7.6036v-15.207z" fill="#007A5D")
+									path.values-svg(d="m196.83 42.829-65.881-38.024-65.881 38.024 13.177 7.6094 52.703-30.426 52.71 30.426 13.171-7.6094z" fill="#CEDFE2")
+									path.values-svg(d="m105.2 19.672-40.124 23.156 13.177 7.6094 40.118-23.162-13.171-7.6036z" fill="url(#paint2_linear_20_89)")
+									path.values-svg(d="m104.6 65.645 39.526-22.817-13.177-7.6036-52.704 30.42h26.355z" fill="url(#paint3_linear_20_89)" opacity=".4")
+									path.values-svg(d="m144.13 42.829-13.177-22.817v15.213l13.177 7.6036z" fill="url(#paint4_linear_20_89)")
+									g.values-svg-lite-second(fill="#006550")
+										path.values-svg-lite-second(d="m84.143 51.926 1.6699-0.9607v2.9817l-1.6699 0.9606v-2.9816z")
+										path.values-svg-lite-second(d="m89.053 49.097 1.6639-0.9665v2.9876l-1.6639 0.9607v-2.9818z")
+										path.values-svg-lite-second(d="m93.957 46.262 1.6698-0.9607v2.9816l-1.6698 0.9607v-2.9816z")
+										path.values-svg-lite-second(d="m98.861 43.432 1.6699-0.9607v2.9818l-1.6699 0.9607v-2.9818z")
+										path.values-svg-lite-second(d="m103.77 40.597 1.664-0.9607v2.9817l-1.664 0.9666v-2.9876z")
+										path.values-svg-lite-second(d="m108.68 37.767 1.664-0.9607v2.9817l-1.664 0.9607v-2.9817z")
+										path.values-svg-lite-second(d="m113.58 34.938 1.67-0.9665v2.9816l-1.67 0.9666v-2.9817z")
+										path.values--lite-second(d="m118.48 32.103 1.67-0.9607v2.9817l-1.67 0.9608v-2.9818z")
+										path.values--lite-second(d="m123.39 29.273 1.664-0.9666v2.9876l-1.664 0.9607v-2.9817z")
+										path.values--lite-second(d="m177.76 51.926-1.664-0.9607v2.9817l1.664 0.9606v-2.9816z")
+										path.values--lite-second(d="m172.86 49.097-1.67-0.9665v2.9876l1.67 0.9607v-2.9818z")
+										path.values--lite-second(d="m167.95 46.262-1.67-0.9607v2.9816l1.67 0.9607v-2.9816z")
+										path.values--lite-second(d="m163.04 43.432-1.664-0.9607v2.9818l1.664 0.9607v-2.9818z")
+										path.values--lite-second(d="m158.14 40.597-1.664-0.9607v2.9817l1.664 0.9666v-2.9876z")
+										path.values-svg-lite-second(d="m153.24 37.767-1.67-0.9607v2.9817l1.67 0.9607v-2.9817z")
+										path.values-svg-lite-second(d="m148.33 34.938-1.67-0.9665v2.9816l1.67 0.9666v-2.9817z")
+										path.values-svg-lite-second(d="m143.42 32.103-1.664-0.9607v2.9817l1.664 0.9608v-2.9818z")
+										path.values-svg-lite-second(d="m138.52 29.273-1.664-0.9666v2.9876l1.664 0.9607v-2.9817z")
+									path.values-svg(d="m78.248 103.2-66.76-38.54v-44.954l66.76 38.534v44.96z" fill="#B0D1BF")
+									path.values-svg(d="m111.63 83.922-33.38 19.273v-44.96l33.38-19.267v44.954z" fill="#007A5D")
+									path.values-svg-lite(d="m102.16 89.388-14.443 8.3417v-14.405l14.443-8.3417v14.405z" fill="#34564F")
+									path.values-svg(d="m44.869 0.43463-33.38 19.267 66.76 38.534 33.38-19.267-66.759-38.534zm-10.002 20.755c-3.4745-2.0092-3.4745-5.2604 0-7.2638s9.111-2.0034 12.591 0c3.4745 2.0093 3.4745 5.2604 0 7.2638-3.4804 2.0093-9.1169 2.0093-12.591 0zm19.47 11.241c-3.4745-2.0092-3.4745-5.2604 0-7.2638 3.4745-2.0093 9.111-2.0034 12.586 0 3.4745 2.0093 3.4745 5.2604 0 7.2638-3.4745 2.0093-9.111 2.0093-12.586 0z" fill="#CEDFE2")
+									path.values-svg(d="m76.133 26.362-15.503-2.7005 2.6131 10.046 12.89-2.2846v-5.0613z" fill="url(#paint5_linear_20_89)")
+									path.values-svg(d="m56.341 15.173-15.498-2.7064 2.6132 10.052 12.884-2.2904v-5.0554z" fill="url(#paint6_linear_20_89)")
+									path.values-svg-lite(d="m68.897 26.895-3.4921-5.4303h-9.5505l-3.492 5.4303c-1.2773 1.8511-0.6211 4.0419 1.9745 5.5357 3.4745 2.0093 9.1111 2.0093 12.586 0 2.5957-1.4996 3.2519-3.6904 1.9746-5.5357z" fill="url(#paint7_linear_20_89)")
+									path.values-svg(d="m57.015 20.434c1.998-1.1541 5.2323-1.1541 7.2304 0 1.998 1.154 1.998 3.0227 0 4.1767-1.9981 1.154-5.2383 1.154-7.2304 0-1.9981-1.1599-1.9981-3.0286 0-4.1767z" fill="#fff")
+									path.values-svg-lite(d="m49.427 15.654-3.492-5.4304h-9.5504l-3.492 5.4304c-1.2773 1.8511-0.6211 4.0419 1.9745 5.5357 3.4745 2.0093 9.1109 2.0093 12.585 0 2.5956-1.4938 3.2518-3.6846 1.9745-5.5357z" fill="url(#paint8_linear_20_89)")
+									path.values-svg(d="m37.544 9.1924c1.998-1.154 5.2382-1.154 7.2303 0 1.998 1.154 1.998 3.0227 0 4.1767s-5.2382 1.154-7.2303 0c-1.998-1.154-1.998-3.0227 0-4.1767z" fill="#fff")
+									g.values-svg-lite-second(fill="#4A896D")
+										path.values-svg-lite-second(d="m38.535 39.525-3.3515-1.9331v4.2353l3.3515 1.9331v-4.2353z")
+										path.values-svg-lite-second(d="m49.286 45.734-3.3456-1.9331v4.2294l3.3456 1.939v-4.2353z")
+										path.values-svg-lite-second(d="m43.914 42.63-3.3516-1.9331v4.2294l3.3516 1.939v-4.2353z")
+										path.values-svg-lite-second(d="m19.047 32.513 3.3515 1.9331v-4.2294l-3.3515-1.939v4.2353z")
+										path.values-svg-lite-second(d="m33.156 36.42-3.3515-1.9331v4.2352l3.3515 1.9332v-4.2353z")
+										path.values-svg-lite-second(d="m27.777 33.315-3.3515-1.9331v4.2352l3.3515 1.9331v-4.2352z")
+										path.values-svg-lite-second(d="m54.665 48.839-3.3515-1.9331v4.2294l3.3515 1.939v-4.2353z")
+										path.values-svg-lite-second(d="m70.801 58.153-3.3516-1.9331v4.2293l3.3516 1.9331v-4.2293z")
+										path.values-svg-lite-second(d="m65.423 55.048-3.3515-1.9331v4.2294l3.3515 1.9332v-4.2295z")
+										path.values-svg-lite-second(d="m60.044 51.944-3.3515-1.9331v4.2294l3.3515 1.939v-4.2353z")
+									g.values-svg-lite(fill="#34564F")
+										path.values-svg-lite(d="m101.5 49.026 3.352-1.9331v4.2352l-3.352 1.9331v-4.2352z")
+										path.values-svg-lite(d="m85.373 58.34 3.3517-1.9332v4.2295l-3.3517 1.939v-4.2353z")
+										path.values-svg-lite(d="m90.746 55.236 3.3514-1.9331v4.2294l-3.3514 1.9389v-4.2352z")
+										path.values-svg-lite(d="m96.125 52.131 3.3516-1.9331v4.2352l-3.3516 1.9331v-4.2352z")
+									path.values-svg(d="m178.46 69.389h-25.382l25.382 14.651-42.303 24.416h25.382l42.303-24.416-25.382-14.651z" fill="url(#paint9_linear_20_89)" opacity=".4")
+									path.values-svg(d="m136.16 108.46-25.382-14.65v-14.651l25.382 14.651v14.65z" fill="#B0D1BF")
+									path.values-svg(d="m178.46 84.039-42.303 24.416v-14.65l42.303-24.416v14.651z" fill="#4A896D")
+									path.values-svg(d="m178.46 69.389-42.303 24.416-25.382-14.651 42.303-24.416 25.382 14.651z" fill="#CEDFE2")
+									path.values-svg(d="m127.03 103.2-6.346-18.318-9.913-5.7233v14.651l16.259 9.3905z" fill="#B0D1BF")
+									path.values-svg(d="m178.63 69.348-25.552-14.61-42.303 24.416 9.913 5.7232 30.404 0.287 27.538-15.816z" fill="url(#paint10_linear_20_89)" opacity=".7")
+									path.values-svg-lite(d="m139.47 96.482 35.677-20.596v3.4034l-35.677 20.597v-3.4035z" fill="#006550")
+									path.values-svg(d="m119.76 97.337h-41.506l8.1326 4.6921-36.626 21.136h41.507l36.626-21.136-8.133-4.6921z" fill="url(#paint11_linear_20_89)" opacity=".4")
+									path.values-svg(d="m49.755 123.16-48.831-28.183v-23.959l48.831 28.188v23.954z" fill="#B0D1BF")
+									path.values-svg(d="m86.381 102.03-36.626 21.141v-23.959l36.626-21.141v23.959z" fill="#4A896D")
+									path.values-svg(d="m56.675 60.924-11.906 6.8714-11.291-6.5199 11.906-6.8714-7.8338-4.5223-36.626 21.141 48.831 28.188 36.626-21.141-29.706-17.146z" fill="#CEDFE2")
+									path.values-svg-clr(d="m44.769 64.269-11.291-6.514 11.9-6.8714 11.296 6.514-11.906 6.8714z" fill="#fff")
+									path.values-svg(d="m56.675 60.924-11.906 6.8714v-3.5265l11.906-6.8714v3.5265z" fill="#4E9376")
+									path.values-svg-clr(d="m39.127 57.491-5.6483-3.2628 11.9-6.8714 5.6483 3.2629-11.9 6.8713z" fill="#fff")
+									path.values-svg-clr(d="m39.126 61.012v-3.5206l-5.6483-3.2629v7.0471l11.291 6.5199v-3.5265l-5.6425-3.257z" fill="#B0D1BF")
+									path.values-svg(d="m51.026 54.14-11.9 6.8714v-3.5206l11.9-6.8713v3.5205z" fill="#4E9376")
+									path.values-svg-clr(d="m51.026 54.14-11.9 6.8713h6.1052l8.8475-5.1081-3.0527-1.7632z" fill="url(#paint12_linear_20_89)")
+									path.values-svg(d="m56.675 60.924-11.906 6.8714h6.1052l8.8532-5.1081-3.0526-1.7633z" fill="url(#paint13_linear_20_89)")
+									g.values-svg-lite(fill="#4A896D")
+										path.values-svg-lite(d="m7.358 98.696-1.9571-1.1365v-18.921l1.9571 1.1306v18.927z")
+										path.values-svg-lite(d="m12.08 101.42-1.9569-1.131v-18.927l1.9569 1.1306v18.927z")
+										path.values-svg-lite(d="m16.803 104.14-1.9571-1.131v-18.927l1.9571 1.1365v18.921z")
+										path.values-svg-lite(d="m21.531 106.87-1.9629-1.131v-18.927l1.9629 1.1306v18.928z")
+										path.values-svg-lite(d="m26.254 109.6-1.9629-1.131v-18.927l1.9629 1.1306v18.928z")
+										path.values-svg-lite(d="m30.977 112.33-1.9631-1.13v-18.927l1.9631 1.1306v18.927z")
+										path.values-svg-lite(d="m35.699 115.05-1.957-1.13v-18.927l1.957 1.1305v18.927z")
+										path.values-svg-lite(d="m40.421 117.78-1.9568-1.131v-18.927l1.9568 1.1306v18.927z")
+										path.values-svg-lite(d="m45.144 120.5-1.957-1.131v-18.927l1.957 1.131v18.927z")
+									path.values-svg-lite-second(d="m75.29 108.43-14.443 8.336v-14.405l14.443-8.3358v14.405z" fill="#34564F")
+									defs
+										linearGradient(id="paint0_linear_20_89" x1="78.249" x2="178.63" y1="71.075" y2="71.075" gradientUnits="userSpaceOnUse")
+											stop(stop-color="#005F4F" offset="0")
+											stop(stop-color="#337F72" offset=".1707")
+											stop(stop-color="#8AB5AE" stop-opacity=".24" offset=".4755")
+											stop(stop-color="#C9DDDA" stop-opacity=".05" offset=".7248")
+											stop(stop-color="#F0F6F5" stop-opacity=".08" offset=".9058")
+											stop(stop-color="#fff" stop-opacity="0" offset="1")
+										linearGradient(id="paint1_linear_20_89" x1="183.66" x2="223.19" y1="54.236" y2="54.236" gradientUnits="userSpaceOnUse")
+											stop(stop-color="#005F4F" offset="0")
+											stop(stop-color="#337F72" offset=".1707")
+											stop(stop-color="#8AB5AE" stop-opacity=".24" offset=".4755")
+											stop(stop-color="#C9DDDA" stop-opacity=".05" offset=".7248")
+											stop(stop-color="#F0F6F5" stop-opacity=".08" offset=".9058")
+											stop(stop-color="#fff" stop-opacity="0" offset="1")
+										linearGradient(id="paint2_linear_20_89" x1="65.074" x2="118.37" y1="35.054" y2="35.054" gradientUnits="userSpaceOnUse")
+											stop(stop-color="#007A5D" offset="0")
+											stop(stop-color="#49A08C" offset=".2148")
+											stop(stop-color="#8AC2B5" offset=".426")
+											stop(stop-color="#BCDCD5" offset=".6159")
+											stop(stop-color="#E1EFEC" offset=".7809")
+											stop(stop-color="#F7FBFA" offset=".9145")
+											stop(stop-color="#fff" offset="1")
+										linearGradient(id="paint3_linear_20_89" x1="78.249" x2="144.13" y1="50.433" y2="50.433" gradientUnits="userSpaceOnUse")
+											stop(stop-color="#005F4F" offset="0")
+											stop(stop-color="#337F72" offset=".1707")
+											stop(stop-color="#8AB5AE" stop-opacity=".24" offset=".4755")
+											stop(stop-color="#C9DDDA" stop-opacity=".05" offset=".7248")
+											stop(stop-color="#F0F6F5" stop-opacity=".08" offset=".9058")
+											stop(stop-color="#fff" stop-opacity="0" offset="1")
+										linearGradient(id="paint4_linear_20_89" x1="130.95" x2="144.13" y1="31.422" y2="31.422" gradientUnits="userSpaceOnUse")
+											stop(stop-color="#007A5D" offset="0")
+											stop(stop-color="#49A08C" offset=".2148")
+											stop(stop-color="#8AC2B5" offset=".426")
+											stop(stop-color="#BCDCD5" offset=".6159")
+											stop(stop-color="#E1EFEC" offset=".7809")
+											stop(stop-color="#F7FBFA" offset=".9145")
+											stop(stop-color="#fff" offset="1")
+										linearGradient(id="paint5_linear_20_89" x1="60.63" x2="76.133" y1="28.684" y2="28.684" gradientUnits="userSpaceOnUse")
+											stop(stop-color="#005F4F" offset="0")
+											stop(stop-color="#337F72" offset=".1707")
+											stop(stop-color="#8AB5AE" stop-opacity=".24" offset=".4755")
+											stop(stop-color="#C9DDDA" stop-opacity=".05" offset=".7248")
+											stop(stop-color="#F0F6F5" stop-opacity=".08" offset=".9058")
+											stop(stop-color="#fff" stop-opacity="0" offset="1")
+										linearGradient(id="paint6_linear_20_89" x1="40.843" x2="56.341" y1="17.492" y2="17.492" gradientUnits="userSpaceOnUse")
+											stop(stop-color="#005F4F" offset="0")
+											stop(stop-color="#337F72" offset=".1707")
+											stop(stop-color="#8AB5AE" stop-opacity=".24" offset=".4755")
+											stop(stop-color="#C9DDDA" stop-opacity=".05" offset=".7248")
+											stop(stop-color="#F0F6F5" stop-opacity=".08" offset=".9058")
+											stop(stop-color="#fff" stop-opacity="0" offset="1")
+										linearGradient(id="paint7_linear_20_89" x1="51.732" x2="69.531" y1="27.698" y2="27.698" gradientUnits="userSpaceOnUse")
+											stop(stop-color="#006550" offset=".217")
+											stop(stop-color="#00594D" offset=".4332")
+											stop(stop-color="#003A44" offset=".8217")
+											stop(stop-color="#002940" offset="1")
+										linearGradient(id="paint8_linear_20_89" x1="32.26" x2="50.059" y1="16.459" y2="16.459" gradientUnits="userSpaceOnUse")
+											stop(stop-color="#006550" offset=".217")
+											stop(stop-color="#00594D" offset=".4332")
+											stop(stop-color="#003A44" offset=".8217")
+											stop(stop-color="#002940" offset="1")
+										linearGradient(id="paint9_linear_20_89" x1="136.16" x2="203.84" y1="88.919" y2="88.919" gradientUnits="userSpaceOnUse")
+											stop(stop-color="#005F4F" offset="0")
+											stop(stop-color="#337F72" offset=".1707")
+											stop(stop-color="#8AB5AE" stop-opacity=".24" offset=".4755")
+											stop(stop-color="#C9DDDA" stop-opacity=".05" offset=".7248")
+											stop(stop-color="#F0F6F5" stop-opacity=".08" offset=".9058")
+											stop(stop-color="#fff" stop-opacity="0" offset="1")
+										linearGradient(id="paint10_linear_20_89" x1="110.77" x2="178.63" y1="69.95" y2="69.95" gradientUnits="userSpaceOnUse")
+											stop(stop-color="#007A5D" offset="0")
+											stop(stop-color="#49A08C" offset=".2148")
+											stop(stop-color="#8AC2B5" offset=".426")
+											stop(stop-color="#BCDCD5" offset=".6159")
+											stop(stop-color="#E1EFEC" offset=".7809")
+											stop(stop-color="#F7FBFA" offset=".9145")
+											stop(stop-color="#fff" offset="1")
+										linearGradient(id="paint11_linear_20_89" x1="49.756" x2="127.89" y1="110.25" y2="110.25" gradientUnits="userSpaceOnUse")
+											stop(stop-color="#005F4F" offset="0")
+											stop(stop-color="#337F72" offset=".1707")
+											stop(stop-color="#8AB5AE" stop-opacity=".24" offset=".4755")
+											stop(stop-color="#C9DDDA" stop-opacity=".05" offset=".7248")
+											stop(stop-color="#F0F6F5" stop-opacity=".08" offset=".9058")
+											stop(stop-color="#fff" stop-opacity="0" offset="1")
+										linearGradient(id="paint12_linear_20_89" x1="39.125" x2="54.079" y1="57.576" y2="57.576" gradientUnits="userSpaceOnUse")
+											stop(stop-color="#007A5D" offset="0")
+											stop(stop-color="#49A08C" offset=".2148")
+											stop(stop-color="#8AC2B5" offset=".426")
+											stop(stop-color="#BCDCD5" offset=".6159")
+											stop(stop-color="#E1EFEC" offset=".7809")
+											stop(stop-color="#F7FBFA" offset=".9145")
+											stop(stop-color="#fff" offset="1")
+										linearGradient(id="paint13_linear_20_89" x1="44.769" x2="59.727" y1="64.359" y2="64.359" gradientUnits="userSpaceOnUse")
+											stop(stop-color="#005F4F" offset="0")
+											stop(stop-color="#337F72" offset=".1707")
+											stop(stop-color="#8AB5AE" stop-opacity=".24" offset=".4755")
+											stop(stop-color="#C9DDDA" stop-opacity=".05" offset=".7248")
+											stop(stop-color="#F0F6F5" stop-opacity=".08" offset=".9058")
+											stop(stop-color="#fff" stop-opacity="0" offset="1")
+								.img-links-text.img-links-text--values 
+									p НАШИ ЦЕННОСТИ
+							a.img-links-link.img-links-link--career.content-tab(href="#career")
+								svg(fill="none" version="1.1" viewBox="0 0 234 146" xmlns="http://www.w3.org/2000/svg")
+									path.career-svg(d="m130.36 69.717h-88.626v53.477h88.626v-53.477z" fill="url(#paint0_linear_18_951)" opacity=".4")
+									path.career-svg(d="m151.46 51.089h-54.713l82.07 47.373-82.07 47.373h54.713l82.07-47.373-82.07-47.373z" fill="url(#paint1_linear_18_951)" opacity=".4")
+									path.career-svg(d="m124.11 98.462-54.714-31.58v-31.586l54.714 31.586v31.58z" fill="#B0D1BF")
+									path.career-svg(d="m96.75 19.508-27.357 15.793 54.714 31.58-54.714 31.58 27.357 15.793 82.07-47.373-82.07-47.373zm16.64 31.709-10.945-6.3149 10.945-6.3149 10.945 6.3149-10.945 6.3149zm18.925 10.925-10.945-6.3148 10.945-6.3149 10.94 6.3149-10.94 6.3148z" fill="#CEDFE2")
+									path.career-svg(d="m178.82 98.462-82.07 47.373v-31.58l82.07-47.374v31.58z" fill="#4E9376")
+									path.career-svg-lite-second(d="m132.32 62.142-10.945-6.3149v-3.4854l10.945 6.3148v3.4855z" fill="#B0D1BF")
+									path.career-svg-lite-second(d="m143.26 55.828-10.94 6.3149v-3.4855l10.94-6.3148v3.4854z" fill="#4E9376")
+									path.career-svg-lite(d="m138.36 49.536h-6.047l10.922 6.3031-10.922 6.3032h6.047l10.916-6.3032-10.916-6.3031z" fill="url(#paint2_linear_18_951)")
+									path.career-svg-lite-second(d="m121.37 52.342 10.945 6.3149 10.94-6.3149-10.94-6.3207-10.945 6.3207z" fill="#fff")
+									path.career-svg-lite-second(d="m119.44 38.611h-6.047l10.922 6.3032-10.922 6.3031h6.047l10.921-6.3031-10.921-6.3032z" fill="url(#paint3_linear_18_951)")
+									path.career-svg-lite-second(d="m113.39 51.223-10.939-6.3207v-3.4855l10.939 6.3149v3.4913z" fill="#B0D1BF")
+									path.career-svg-lite(d="m124.34 44.903-10.945 6.3207v-3.4913l10.945-6.3149v3.4855z" fill="#4E9376")
+									path.career-svg-lite-second(d="m102.45 41.417 10.939 6.3149 10.945-6.3149-10.945-6.3148-10.939 6.3148z" fill="#fff")
+									g.career-svg-lite(fill="#006550")
+										path.career-svg-lite(d="m106.31 118.26-3.223 1.857v-3.72l3.223-1.857v3.72z")
+										path.career-svg-lite(d="m115.82 112.77-3.223 1.857v-3.72l3.223-1.857v3.72z")
+										path.career-svg-lite(d="m125.32 107.28-3.222 1.863v-3.72l3.222-1.857v3.714z")
+										path.career-svg-lite(d="m134.84 101.8-3.223 1.857v-3.7198l3.223-1.857v3.7198z")
+										path.career-svg-lite(d="m144.35 96.3-3.228 1.8628v-3.7198l3.228-1.8628v3.7198z")
+										path.career-svg-lite(d="m153.86 90.811-3.229 1.8628v-3.7197l3.229-1.8628v3.7197z")
+										path.career-svg-lite(d="m163.36 85.322-3.222 1.8629v-3.7198l3.222-1.8628v3.7197z")
+										path.career-svg-lite(d="m172.88 79.834-3.229 1.8628 6e-3 -3.7198 3.223-1.8628v3.7198z")
+										path.career-svg-lite(d="m106.31 126.72-3.223 1.857v-3.72l3.223-1.857v3.72z")
+										path.career-svg-lite(d="m115.82 121.23-3.223 1.857v-3.72l3.223-1.857v3.72z")
+										path.career-svg-lite(d="m125.32 115.74-3.222 1.857v-3.72l3.222-1.857v3.72z")
+										path.career-svg-lite(d="m134.84 110.25-3.223 1.857v-3.72l3.223-1.857v3.72z")
+										path.career-svg-lite(d="m144.35 104.76-3.228 1.857v-3.72l3.228-1.863v3.726z")
+										path.career-svg-lite(d="m153.86 99.264-3.229 1.8627v-3.7197l3.229-1.8628v3.7198z")
+										path.career-svg-lite(d="m163.36 93.775-3.222 1.8628v-3.7198l3.222-1.8628v3.7198z")
+										path.career-svg-lite(d="m172.88 88.286-3.229 1.8629v-3.7199l3.229-1.8628v3.7198z")
+										path.career-svg-lite(d="m106.31 135.17-3.223 1.862v-3.725l3.223-1.857v3.72z")
+										path.career-svg-lite(d="m115.82 129.68-3.223 1.863v-3.726l3.223-1.857v3.72z")
+										path.career-svg-lite(d="m125.32 124.19-3.222 1.857v-3.72l3.222-1.857v3.72z")
+										path.career-svg-lite(d="m134.84 118.7-3.223 1.857v-3.72l3.223-1.857v3.72z")
+										path.career-svg-lite(d="m144.35 113.21-3.228 1.857v-3.72l3.228-1.857v3.72z")
+										path.career-svg-lite(d="m153.86 107.72-3.229 1.857v-3.72l3.229-1.862v3.725z")
+										path.career-svg-lite(d="m163.36 102.23-3.222 1.863v-3.72l3.222-1.8565v3.7135z")
+										path.career-svg-lite(d="m172.88 96.74-3.223 1.8628-6e-3 -3.7198 3.229-1.8628v3.7198z")
+										path.career-svg-lite(d="m112.65 70.039 2.988 1.7281 0.235-0.1347v-3.4562l-3.223-1.8569v3.7197z")
+										path.career-svg-lite(d="m103.14 64.55 3.228 1.8569v-3.7198l-3.228-1.8628v3.7257z")
+										path.career-svg-lite(d="m93.627 59.055 3.2285 1.8629-0.0059-3.7198-3.2226-1.8629v3.7198z")
+										path.career-svg-lite(d="m84.123 53.566 3.2225 1.8629-0.0059-3.7199-3.2166-1.8629v3.7199z")
+										path.career-svg-lite(d="m74.608 48.078 3.2284 1.8628-0.0059-3.7197-3.2225-1.8628v3.7197z")
+										path.career-svg-lite(d="m103.14 73.003 3.228 1.857v-3.7198l-3.228-1.8628v3.7256z")
+										path.career-svg-lite(d="m93.627 67.508 3.2285 1.8628v-3.7199l-3.2285-1.8628v3.7199z")
+										path.career-svg-lite(d="m84.123 62.025 3.2225 1.857v-3.7199l-3.2225-1.8628v3.7257z")
+										path.career-svg-lite(d="m74.608 56.536 3.2284 1.857v-3.7198l-3.2284-1.8628v3.7256z")
+										path.career-svg-lite(d="m104.22 78.357-1.084-0.6209v1.2477l1.084-0.6268z")
+										path.career-svg-lite(d="m93.627 75.967 3.2285 1.857v-3.7198l-3.2285-1.857v3.7198z")
+										path.career-svg-lite(d="m84.123 70.472 3.2225 1.8628v-3.7198l-3.2225-1.8569v3.7139z")
+										path.career-svg-lite(d="m74.608 64.984 3.2225 1.8628 0.0059-3.7198-3.2284-1.8628v3.7198z")
+									path.career-svg(d="m41.732 123.19v-63.166l41.032-23.684v63.166l-41.032 23.684z" fill="#4E9376")
+									path.career-svg(d="m178.82 66.882h-54.713l-54.714 31.58 27.357 15.793 82.07-47.373z" fill="#CEDFE2")
+									g.career-svg-lite(fill="#006550")
+										path.career-svg-lite(d="m53.158 108.12-3.8848 2.244v-45.909l3.8848-2.2494v45.914z")
+										path.career-svg-lite(d="m64.63 101.5-3.8905 2.244v-45.915l3.8905-2.2436v45.914z")
+										path.career-svg-lite(d="m76.096 94.588-3.8846 2.2436v-45.915l3.8846-2.2437v45.915z")
+									path.career-svg(d="m96.75 145.84-27.357-15.793v-31.58l27.357 15.793v31.58z" fill="#B0D1BF")
+									g.career-svg(fill="#006550")
+										path.career-svg(d="m85.998 117.57 3.2285 1.863v-3.72l-3.2285-1.857v3.714z")
+										path.career-svg(d="m76.489 112.08 3.2284 1.862-0.0058-3.719-3.2226-1.863v3.72z")
+										path.career-svg(d="m86.004 126.03 3.2226 1.857v-3.72l-3.2285-1.857 0.0059 3.72z")
+										path.career-svg(d="m76.489 120.54 3.2284 1.857v-3.72l-3.2284-1.856v3.719z")
+										path.career-svg(d="m85.998 134.48 3.2285 1.863v-3.726l-3.2226-1.856-0.0059 3.719z")
+										path.career-svg(d="m76.489 128.99 3.2284 1.857v-3.719l-3.2284-1.863v3.725z")
+									path.career-svg(d="m130.36 66.882h-6.252l-42.907 24.767h49.159v-24.767z" fill="url(#paint4_linear_18_951)")
+									path.career-svg(d="m0.6944 99.51v-63.166l41.038 23.684v63.166l-41.038-23.684z" fill="#B0D1BF")
+									path.career-svg(d="m75.927 32.396-27.357 15.793-27.357-15.793 27.357-15.793-6.8377-3.9482-41.038 23.69 41.038 23.684 41.032-23.684-6.8377-3.9483z" fill="#CEDFE2")
+									path.career-svg(d="m48.57 48.189h13.675l20.519-11.845-6.8377-3.9482-27.357 15.793z" fill="#B0D1BF")
+									path.career-svg(d="m48.57 48.189v-15.793l27.357-15.793v15.793l-27.357 15.793z" fill="#4E9376")
+									path.career-svg(d="m48.208 0.50732 27.357 15.787-27.357 15.793-27.357-15.793 27.357-15.787z" fill="#CEDFE2")
+									path.career-svg(d="m21.213 32.396v-15.793l27.357 15.793v15.793l-27.357-15.793z" fill="#B0D1BF")
+									g.career-svg-lite(fill="#006550")
+										path.career-svg-lite(d="m30.301 108.12 3.8905 2.244v-45.909l-3.8905-2.2494v45.914z")
+										path.career-svg-lite(d="m18.835 101.5 3.8847 2.244v-45.915l-3.8847-2.2436v45.914z")
+										path.career-svg-lite(d="m7.3621 94.882 3.8906 2.2436v-45.915l-3.8906-2.2436v45.915z")
+									defs
+										linearGradient(id="paint0_linear_18_951" x1="41.731" x2="130.36" y1="96.456" y2="96.456" gradientUnits="userSpaceOnUse")
+											stop(stop-color="#007A5D" offset="0")
+											stop(stop-color="#49A08C" offset=".2148")
+											stop(stop-color="#8AC2B5" offset=".426")
+											stop(stop-color="#BCDCD5" offset=".6159")
+											stop(stop-color="#E1EFEC" offset=".7809")
+											stop(stop-color="#F7FBFA" offset=".9145")
+											stop(stop-color="#fff" offset="1")
+										linearGradient(id="paint1_linear_18_951" x1="96.751" x2="233.53" y1="98.456" y2="98.456" gradientUnits="userSpaceOnUse")
+											stop(stop-color="#005F4F" offset="0")
+											stop(stop-color="#337F72" offset=".1707")
+											stop(stop-color="#8AB5AE" stop-opacity=".24" offset=".4755")
+											stop(stop-color="#C9DDDA" stop-opacity=".05" offset=".7248")
+											stop(stop-color="#F0F6F5" stop-opacity=".08" offset=".9058")
+											stop(stop-color="#fff" stop-opacity="0" offset="1")
+										linearGradient(id="paint2_linear_18_951" x1="132.32" x2="149.28" y1="55.838" y2="55.838" gradientUnits="userSpaceOnUse")
+											stop(stop-color="#005F4F" offset="0")
+											stop(stop-color="#337F72" offset=".1707")
+											stop(stop-color="#8AB5AE" stop-opacity=".24" offset=".4755")
+											stop(stop-color="#C9DDDA" stop-opacity=".05" offset=".7248")
+											stop(stop-color="#F0F6F5" stop-opacity=".08" offset=".9058")
+											stop(stop-color="#fff" stop-opacity="0" offset="1")
+										linearGradient(id="paint3_linear_18_951" x1="113.39" x2="130.36" y1="44.913" y2="44.913" gradientUnits="userSpaceOnUse")
+											stop(stop-color="#005F4F" offset="0")
+											stop(stop-color="#337F72" offset=".1707")
+											stop(stop-color="#8AB5AE" stop-opacity=".24" offset=".4755")
+											stop(stop-color="#C9DDDA" stop-opacity=".05" offset=".7248")
+											stop(stop-color="#F0F6F5" stop-opacity=".08" offset=".9058")
+											stop(stop-color="#fff" stop-opacity="0" offset="1")
+										linearGradient(id="paint4_linear_18_951" x1="81.2" x2="130.36" y1="79.264" y2="79.264" gradientUnits="userSpaceOnUse")
+											stop(stop-color="#005F4F" offset="0")
+											stop(stop-color="#337F72" offset=".1707")
+											stop(stop-color="#8AB5AE" stop-opacity=".24" offset=".4755")
+											stop(stop-color="#C9DDDA" stop-opacity=".05" offset=".7248")
+											stop(stop-color="#F0F6F5" stop-opacity=".08" offset=".9058")
+											stop(stop-color="#fff" stop-opacity="0" offset="1")
+								.img-links-text.img-links-text--career 
+									p КАРЬЕРА
+							a.img-links-link.img-links-link--program.content-tab(href="#program")
+								svg(width="188" height="204" viewBox="0 0 188 204" fill="none" xmlns="http://www.w3.org/2000/svg")
+									path(opacity="0.4" d="M187.365 118.577H55.1468L102.12 145.693L55.1468 172.804H187.365V118.577Z" fill="url(#paint0_linear_306_62)")
+									path.program-svg(d="M7.88071 145.517V90.9446L55.1468 118.231V172.804L7.88071 145.517Z" fill="#B0D1BF")
+									path.program-svg(d="M55.1468 172.804V118.231L102.419 90.9505V145.517L55.1468 172.804Z" fill="#007A5D")
+									path.program-svg(d="M55.1468 59.1125L3.05176e-05 90.9446L55.1468 122.777L110.294 90.9446L55.1468 59.1125ZM55.1468 118.231L7.87483 90.9446L55.1468 63.6583L102.419 90.9446L55.1468 118.231Z" fill="#42934E")
+									path.program-svg(d="M3.05176e-05 90.9505V36.3779L55.1468 68.2099V122.783L3.05176e-05 90.9505Z" fill="#B0D1BF")
+									path.program-svg(d="M55.1468 122.783V68.2099L110.299 36.3779V90.9505L55.1468 122.783Z" fill="#4E9376")
+									path.program-svg(d="M55.1468 4.54578L0 36.3779L55.1468 68.2099L110.294 36.3779L55.1468 4.54578ZM55.1468 63.6642L7.8748 36.3779L55.1468 9.09154L102.419 36.3779L55.1468 63.6642Z" fill="#CEDFE2")
+									path.program-svg(d="M7.88074 98.5014V95.4962L55.1468 122.783V125.782L7.88074 98.5014Z" fill="#4A896D")
+									path.program-svg(d="M55.1468 0L7.87476 27.2863L55.1468 54.5726L102.419 27.2863L55.1468 0ZM55.1468 36.8348L38.6004 27.2863L55.1468 17.7379L71.6931 27.2863L55.1468 36.8348Z" fill="#CEDFE2")
+									path.program-svg(d="M7.88071 36.3778V27.2805L55.1468 54.5668V63.6642L7.88071 36.3778Z" fill="#B0D1BF")
+									path.program-svg(d="M55.1468 63.6642V54.5668L102.419 27.2805V36.3778L55.1468 63.6642Z" fill="#4A896D")
+									path.program-svg(d="M62.2364 17.732H55.1468L71.6931 27.2804L55.1468 36.8348H62.2364L78.7827 27.2804L62.2364 17.732Z" fill="url(#paint1_linear_306_62)")
+									path.program-svg(d="M55.1468 32.8162L38.6063 23.2678L55.1468 13.7193L71.6931 23.2678L55.1468 32.8162Z" fill="white")
+									path.program-svg(d="M55.1469 36.8348L38.6064 27.2805V23.2678L55.1469 32.8162V36.8348Z" fill="#B0D1BF")
+									path.program-svg(d="M71.6931 27.2805L55.1468 36.8348V32.8162L71.6931 23.2678V27.2805Z" fill="#4E9376")
+									path.program-svg-other(opacity="0.6" d="M55.1468 63.6642H63.0274L110.299 36.3778L102.419 31.8321V36.3778L55.1468 63.6642Z" fill="#3A8C5B")
+									path.program-svg-other(d="M13.0191 59.9502L9.31024 57.8121V53.5299L13.0191 55.6739V59.9502Z" fill="#006550")
+									path.program-svg-other(d="M23.9583 66.2651L20.2495 64.1269V59.8448L23.9583 61.9888V66.2651Z" fill="#006550")
+									path.program-svg-other(d="M34.8974 72.58L31.1886 70.4418V66.1596L34.8974 68.3036V72.58Z" fill="#006550")
+									path.program-svg-other(d="M45.8365 78.8948L42.1277 76.7567V72.4745L45.8365 74.6185V78.8948Z" fill="#006550")
+									path.program-svg-other(d="M13.0192 69.6803L9.31024 67.5362V63.2541L13.0192 65.3981V69.6803Z" fill="#006550")
+									path.program-svg-other(d="M23.9583 75.9893L20.2495 73.8511V69.569L23.9583 71.713V75.9893Z" fill="#006550")
+									path.program-svg-other(d="M34.8974 82.3041L31.1886 80.166V75.8838L34.8974 78.022V82.3041Z" fill="#006550")
+									path.program-svg-other(d="M45.8365 88.619L42.1277 86.4809V82.1987L45.8365 84.3368V88.619Z" fill="#006550")
+									path.program-svg-other(d="M13.0192 79.3986L9.31024 77.2605V72.9783L13.0192 75.1223V79.3986Z" fill="#006550")
+									path.program-svg-other(d="M23.9583 85.7135L20.2495 83.5753V79.2932L23.9583 81.4313V85.7135Z" fill="#006550")
+									path.program-svg-other(d="M34.8974 92.0283L31.1886 89.8902V85.608L34.8974 87.7462V92.0283Z" fill="#006550")
+									path.program-svg-other(d="M45.8365 98.3432L42.1277 96.205V91.9229L45.8365 94.061V98.3432Z" fill="#006550")
+									path.program-svg-other(d="M13.0192 89.1228L9.31024 86.9846V82.7025L13.0192 84.8465V89.1228Z" fill="#006550")
+									path.program-svg-other(d="M23.9583 95.4377L20.2495 93.2995V89.0174L23.9583 91.1614V95.4377Z" fill="#006550")
+									path.program-svg-other(d="M34.8974 101.753L31.1886 99.6144V95.3322L34.8974 97.4704V101.753Z" fill="#006550")
+									path.program-svg-other(d="M45.8365 108.067L42.1277 105.929V101.647L45.8365 103.791V108.067Z" fill="#006550")
+									path.program-svg-other(d="M97.2745 59.9502L100.983 57.8121V53.5299L97.2745 55.6739V59.9502Z" fill="#006558")
+									path.program-svg-other(d="M86.3352 66.2651L90.0442 64.1269V59.8448L86.3352 61.9888V66.2651Z" fill="#006558")
+									path.program-svg-other(d="M75.3962 72.58L79.1051 70.4418V66.1596L75.3962 68.3036V72.58Z" fill="#006558")
+									path.program-svg-other(d="M64.4629 78.8948L68.1659 76.7567V72.4745L64.4629 74.6185V78.8948Z" fill="#006558")
+									path.program-svg-other(d="M97.2745 69.6803L100.983 67.5362V63.2541L97.2745 65.3981V69.6803Z" fill="#006558")
+									path.program-svg-other(d="M86.3352 75.9893L90.0442 73.8511V69.569L86.3352 71.713V75.9893Z" fill="#006558")
+									path.program-svg-other(d="M75.3962 82.3041L79.1051 80.166V75.8838L75.3962 78.022V82.3041Z" fill="#006558")
+									path.program-svg-other(d="M64.4629 88.619L68.1659 86.4809V82.1987L64.4629 84.3368V88.619Z" fill="#006558")
+									path.program-svg-other(d="M97.2745 79.3986L100.983 77.2605V72.9783L97.2745 75.1223V79.3986Z" fill="#006558")
+									path.program-svg-other(d="M86.3352 85.7135L90.0442 83.5753V79.2932L86.3352 81.4313V85.7135Z" fill="#006558")
+									path.program-svg-other(d="M75.3962 92.0283L79.1051 89.8902V85.608L75.3962 87.7462V92.0283Z" fill="#006558")
+									path.program-svg-other(d="M64.4629 98.3432L68.1659 96.205V91.9229L64.4629 94.061V98.3432Z" fill="#006558")
+									path.program-svg-other(d="M97.2745 89.1228L100.983 86.9846V82.7025L97.2745 84.8465V89.1228Z" fill="#006558")
+									path.program-svg-other(d="M86.3352 95.4377L90.0442 93.2995V89.0174L86.3352 91.1614V95.4377Z" fill="#006558")
+									path.program-svg-other(d="M75.3962 101.753L79.1051 99.6144V95.3322L75.3962 97.4704V101.753Z" fill="#006558")
+									path.program-svg-other(d="M64.4629 108.067L68.1659 105.929V101.647L64.4629 103.791V108.067Z" fill="#006558")
+									path.program-svg-gray(d="M78.0445 99.5382L109.555 117.727V203.827L78.0445 185.632V99.5382Z" fill="#E2E2E2")
+									path.program-svg-gray(d="M172.577 167.444L109.555 203.827V117.727L172.577 81.3493V167.444Z" fill="#909090")
+									path.program-svg-gray(d="M172.577 81.3493L141.066 63.1604L78.0445 99.5383L109.555 117.727L172.577 81.3493ZM130.303 93.323L113.756 102.871L103.778 97.1131L120.319 87.5646L130.303 93.323Z" fill="#D3D3D3")
+									path.program-svg(d="M114.078 170.121L117.758 172.241V203.335L114.078 201.215V170.121Z" fill="#E2E2E2")
+									path.program-svg-gray(d="M171.288 172.434L117.758 203.335V172.241L171.288 141.341V172.434Z" fill="#909090")
+									path.program-svg(d="M171.288 141.341L167.608 139.22L114.073 170.121L117.752 172.241L171.288 141.341Z" fill="#CEDFE2")
+									path.program-svg-gray(d="M125.082 86.2993H118.127L130.303 93.323L113.756 102.871H120.711L137.258 93.323L125.082 86.2993Z" fill="url(#paint2_linear_306_62)")
+									path.program-svg-gray(d="M113.756 98.8587L130.303 89.3103L120.319 83.5461L103.778 93.1004L113.756 98.8587Z" fill="white")
+									path.program-svg-gray(d="M130.303 93.323L113.756 102.871V98.8587L130.303 89.3103V93.323Z" fill="#909090")
+									path.program-svg-gray(d="M113.756 102.871L103.778 97.1131V93.1004L113.756 98.8587V102.871Z" fill="#E2E2E2")
+									path.program-svg-gray(d="M114.078 170.121L117.758 172.241L171.288 141.341L167.608 139.22L114.078 170.121Z" fill="#A6A6A6")
+									path.program-svg-left(d="M125.662 198.772V173.395L123.026 174.912L123.031 200.295L125.662 198.772Z" fill="#34564F")
+									path.program-svg-left(d="M132.424 194.87V169.488L129.793 171.011V196.388L132.424 194.87Z" fill="#34564F")
+									path.program-svg-left(d="M139.191 190.963L139.185 165.587L136.555 167.104V192.486L139.191 190.963Z" fill="#34564F")
+									path.program-svg-left(d="M145.953 187.062V161.685L143.316 163.202V188.585L145.953 187.062Z" fill="#34564F")
+									path.program-svg-left(d="M152.714 183.16V157.778L150.077 159.301V184.678L152.714 183.16Z" fill="#34564F")
+									path.program-svg-left(d="M159.476 179.253V153.877L156.839 155.394V180.776L159.476 179.253Z" fill="#34564F")
+									path.program-svg-left(d="M166.237 175.352V149.969L163.601 151.492V176.869L166.237 175.352Z" fill="#34564F")
+									path.program-svg-left(d="M155.573 108.501L159.282 106.363V102.081L155.573 104.219V108.501Z" fill="#34564F")
+									path.program-svg-left(d="M144.634 114.816L148.343 112.678V108.395L144.634 110.534V114.816Z" fill="#34564F")
+									path.program-svg-left(d="M133.695 121.131L137.404 118.987V114.71L133.695 116.848V121.131Z" fill="#34564F")
+									path.program-svg-left(d="M122.756 127.44L126.465 125.302V121.019L122.756 123.163V127.44Z" fill="#34564F")
+									path.program-svg-left(d="M155.573 118.225L159.282 116.087V111.805L155.573 113.943V118.225Z" fill="#34564F")
+									path.program-svg-left(d="M144.634 124.54L148.343 122.396V118.12L144.634 120.258V124.54Z" fill="#34564F")
+									path.program-svg-left(d="M133.695 130.855L137.404 128.711V124.435L133.695 126.573V130.855Z" fill="#34564F")
+									path.program-svg-left(d="M122.756 137.164L126.465 135.026V130.743L122.756 132.888V137.164Z" fill="#34564F")
+									path.program-svg-left(d="M155.573 127.949L159.282 125.805V121.529L155.573 123.667V127.949Z" fill="#34564F")
+									path.program-svg-left(d="M144.634 134.258L148.343 132.12V127.838L144.634 129.982V134.258Z" fill="#34564F")
+									path.program-svg-left(d="M133.695 140.573L137.404 138.435V134.153L133.695 136.297V140.573Z" fill="#34564F")
+									path.program-svg-left(d="M122.756 146.888L126.465 144.75V140.468L122.756 142.612V146.888Z" fill="#34564F")
+									path.program-svg-left(d="M155.573 137.673L159.282 135.529V131.253L155.573 133.391V137.673Z" fill="#34564F")
+									path.program-svg-left(d="M144.634 143.982L148.343 141.844V137.562L144.634 139.706V143.982Z" fill="#34564F")
+									path.program-svg-left(d="M133.695 150.297L137.404 148.159V143.877L133.695 146.021V150.297Z" fill="#34564F")
+									path.program-svg-left(d="M122.756 156.612L126.465 154.474V150.192L122.756 152.336V156.612Z" fill="#34564F")
+									path.program-svg-left(d="M95.6513 125.717L91.9484 123.579V119.297L95.6513 121.441V125.717Z" fill="#34564F")
+									path.program-svg-left(d="M95.6513 135.442L91.9484 133.303V129.021L95.6513 131.165V135.442Z" fill="#34564F")
+									path.program-svg-left(d="M95.6513 145.166L91.9484 143.028V138.745L95.6513 140.889V145.166Z" fill="#34564F")
+									path.program-svg-left(d="M95.6513 154.89L91.9484 152.752V148.47L95.6513 150.614V154.89Z" fill="#34564F")
+									path.program-svg-left(d="M95.6513 164.21L91.9484 162.072V157.79L95.6513 159.934V164.21Z" fill="#34564F")
+									path.program-svg-left(d="M95.6513 173.53L91.9484 171.392V167.11L95.6513 169.254V173.53Z" fill="#34564F")
+									path.program-svg-left(d="M95.6513 182.85L91.9484 180.712V176.43L95.6513 178.568V182.85Z" fill="#34564F")
+									defs
+									linearGradient(id="paint0_linear_306_62" x1="55.1484" y1="145.691" x2="187.368" y2="145.691" gradientUnits="userSpaceOnUse")
+									stop(stop-color="#666666")
+									stop(offset="0.1781" stop-color="#8B8B8B")
+									stop(offset="0.4482" stop-color="#BDBDBD" stop-opacity="0.5")
+									stop(offset="0.6851" stop-color="#E1E1E1" stop-opacity="0.31")
+									stop(offset="0.8771" stop-color="#F7F7F7" stop-opacity="0.06")
+									stop(offset="1" stop-color="white" stop-opacity="0")
+									linearGradient(id="paint1_linear_306_62" x1="55.1469" y1="27.2821" x2="78.7828" y2="27.2821" gradientUnits="userSpaceOnUse")
+									stop(stop-color="#005F4F")
+									stop(offset="0.1707" stop-color="#337F72")
+									stop(offset="0.4755" stop-color="#8AB5AE" stop-opacity="0.24")
+									stop(offset="0.7248" stop-color="#C9DDDA" stop-opacity="0.05")
+									stop(offset="0.9058" stop-color="#F0F6F5" stop-opacity="0.08")
+									stop(offset="1" stop-color="white" stop-opacity="0")
+									linearGradient(id="paint2_linear_306_62" x1="113.757" y1="94.5857" x2="137.258" y2="94.5857" gradientUnits="userSpaceOnUse")
+									stop(stop-color="#666666")
+									stop(offset="0.1781" stop-color="#8B8B8B")
+									stop(offset="0.4482" stop-color="#BDBDBD" stop-opacity="0.5")
+									stop(offset="0.6851" stop-color="#E1E1E1" stop-opacity="0.31")
+									stop(offset="0.8771" stop-color="#F7F7F7" stop-opacity="0.06")
+									stop(offset="1" stop-color="white" stop-opacity="0")
+								.img-links-text.img-links-text--program
+									p MIMAR GRADUATE PROGRAM
+							img.animation__car-down(src="images/car-down.svg") 
+							img.animation__car-up(src="images/car-up.svg") 
+							img.animation__car-left(src="images/car-left.svg") 
+							img.animation__car-right(src="images/car-right.svg") 
+							img.animation__plane(src="images/plane.svg") 
+						.s-first-screen__title.title НАША ЦЕЛЬ —
+						.s-first-screen__text
+							p создание комфортной городской среды
+						.s-first-screen__interactive 
+							.s-first-screen__interactive-image-wrapper 
+								img(src="/images/interactive.svg")
+							.s-first-screen__interactive-content 
+								.s-first-screen__interactive-title Интерактивное изображение
+								.s-first-screen__interactive-text 
+									p Чтобы узнать подробно, нажмите на соответствующее здание
+		<!-- END SECTION FIRST-SCREEN -->
+	<!-- END CONTENT HOME -->
+
+	<!-- START CONTENT ABOUT -->
+	.content.content__about
+		<!-- START SECTION FIRST-SCREEN-SECONDARY -->
+		.section.s-first-screen-secondary 
+			.container
+				.s-first-screen-secondary__inner
+					.s-first-screen-secondary__content 
+						.s-first-screen-secondary__title.title О КОМПАНИИ
+						.s-first-screen-secondary__text 
+							p MIMAR Group — частная строительная компания, основанная в 2020 году в Узбекистане и специализирующаяся на реализации крупных градостроительных проектов — от строительства жилых кварталов до возведения объектов промышленного и социального назначения
+					.s-first-screen-secondary-img-wrapper 
+						img(src="/images/about-bg.svg") 
+		<!-- END SECTION FIRST-SCREEN-SECONDARY -->
+
+		<!-- START SECTION NUMBERS -->
+		.section.s-numbers.section--long
+			.container 
+				.s-numbers__title.title-second.title-second--mb-short MIMAR GROUP в цифрах
+				.s-numbers__text
+					p MIMAR GROUP признан одним из самых быстро развивающихся строительных компаний в Узбекистане, отвечающий стандартам международного уровня
+				.s-numbers__cards
+					.s-numbers__card 
+						.s-numbers__card-title.title >30
+						.s-numbers__card-text 
+							p крупных градостроительных объектов в течение двух лет
+					.s-numbers__card 
+						.s-numbers__card-title.title >5 000
+						.s-numbers__card-text 
+							p сотрудников
+					.s-numbers__card 
+						.s-numbers__card-title.title Прорыв года
+						.s-numbers__card-text 
+							p по версии EMBRAS, The Employer Brand Award & Summit
+		<!-- END SECTION NUMBERS -->
+
+		<!-- START SECTION CONDITIONS -->
+		.section.s-condtions 
+			.container 
+				.s-conditions__title.title-second.title-second--mb-medium Лучшие условия для сотрудников
+				.s-conditions__image-blocks 
+					+image-block("images/earnings.svg", "Стабильный заработок")
+					+image-block("images/collective.svg", "Дружный коллектив")
+					+image-block("images/nutrition.svg", "Бесплатное питание")
+					+image-block("images/career-icon.svg", "Карьерный рост")
+					+image-block("images/officially.svg", "Официальное трудоустройство")
+					+image-block("images/skills.svg", "Навыки, которые пригодятся в жизни")
+		<!-- END SECTION CONDITIONS -->
+
+		<!-- START SECTION CENTER -->
+		.section.s-center.section--long 
+			.container 
+				.title-second.title-second--mb-long Учебный центр MIMAR GROUP
+				.s-center__icon-cards 
+					+icon-card("hat", "Обучение на местах.")
+					+icon-card("cup", "Обучение по разным техническим направлениям от ведущих специалистов в области строительства и архитектуры.")
+					+icon-card("case", "Более 500 сотрудников, прошедших повышение квалификации.")
+					+icon-card("learn", "Тренинги от внешних, внутренних и ведущих иностранных специалистов.")
+		<!-- END SECTION CENTER -->
+
+		<!-- START SECTION VIDEO -->
+		.section.s-video.section--long-pb
+			.container
+				.title-second.title-second--mb-medium Посмотрите видео о нас
+				+video("7hu8ip4dbj8", "/images/video-bg.jpg")
+		<!-- END SECTION VIDEO -->
+
+		<!-- START SECTION LINK -->
+		.section.s-link.section--short-pb
+			.container 
+				.s-link__title Подписывайтесь на наш Instagram
+				a.s-link__link(href="https://www.instagram.com/mimargroup.uz/")
+					img.s-link__img(src="/images/instagram.svg") 
+		<!-- START SECTION LINK -->
+	<!-- END CONTENT ABOUT -->
+
+	<!-- START CONTENT VALUES -->
+	.content.content__values
+		<!-- START SECTION FIRST-SCREEN-SECONDARY -->
+		.section.s-first-screen-secondary 
+			.container
+				.s-first-screen-secondary__inner
+					.s-first-screen-secondary__content 
+						.s-first-screen-secondary__title.title НАШИ ЦЕННОСТИ
+						.s-first-screen-secondary__text 
+							p Своей миссией мы видим формирование современной, комфортной и безопасной городской среды, а также совершенствование социальной, транспортной и экономической инфраструктуры
+					.s-first-screen-secondary-img-wrapper 
+						img(src="/images/values-bg.svg") 
+		<!-- END SECTION FIRST-SCREEN-SECONDARY -->
+
+		<!-- START SECTION OUR-VALUES -->
+		.section.s-our-values.section--long 
+			.title-second.title-second--mb-medium Наши ценности
+			.swiper-container.our-values-slider
+				.swiper-wrapper
+					.swiper-slide
+						+icon-titled-card('helmet', 'Безопасность', 'Главной ценностью компании MIMAR Group является безопасность на каждом этапе — от подготовки персонала к строительным работам до эксплуатации объектов людьми')
+					.swiper-slide
+						+icon-titled-card('medal', 'Качество', 'Мы не просто строим здания, мы создаём объекты, которые будут служить нам и нашим потомкам на протяжении многих лет. А это значит, что в проектах MIMAR Group отлажена система контроля за качеством на всех этапах строительства.')
+					.swiper-slide
+						+icon-titled-card('professional', 'Профессионализм', 'Каждая позиция в MIMAR Group занята опытным профессионалом своего дела, имеющим солидный опыт в сфере строительства и большую мотивацию сделать этот мир ещё лучше')
+					.swiper-slide
+						+icon-titled-card('hands', 'Ответственность', 'MIMAR Group осознает важность своей деятельности и несёт полную ответственность за экологическую безопасность и общественное благо при реализации проектов')
+					.swiper-slide
+						+icon-titled-card('idea', 'Инновации', 'Сотрудники компании находятся в постоянном поиске инноваций, улучшающих нашу работу и жизнь окружающих. Поскольку каждый проект уникален, мы используем наши ноу-хау, передовые инженерные разработки, богатый опыт для удовлетворения специфических потребностей наших клиентов.')
+					.swiper-slide
+						+icon-titled-card('head', 'Развитие молодых талантов', 'MIMAR Group, следуя своей кадровой политике, уделяет большое внимание трудоустройству молодых специалистов, созданию возможностей для их профессионального и личностного роста. Наша программа MIMAR Graduate даёт возможность развиваться с лучшими международными специалистами.')
+					.swiper-slide
+						+icon-titled-card('aesthetics', 'Эстетика', 'Наша компания стремится к созданию объектов Мы не просто строим здания, мы создаём объекты, которые будут служить нам и нашим потомкам на протяжении многих лет. А это значит, что в проектах MIMAR Group отлажена система контроля за качеством на всех этапах строительства.')
+			.container
+				.slider-arrows.our-values-slider-arrows
+					.slider-arrow.slider-arrow--prev.our-values-slider-arrow-prev
+						+icon("arrow-left", "slider-arrow__icon")
+					.slider-arrow.slider-arrow--next.our-values-slider-arrow-next
+						+icon("arrow-right", "slider-arrow__icon")
+		<!-- END SECTION OUR-VALUES -->
+
+		<!-- START SECTION VIDEO -->
+		.section.s-video.section--long-pb
+			.container
+				.title-second.title-second--mb-medium Посмотрите видео о нас
+				+video("7hu8ip4dbj8", "/images/video-bg.jpg")
+		<!-- END SECTION VIDEO -->
+
+		<!-- START SECTION LINK -->
+		.section.s-link.section--short-pb
+			.container 
+				.s-link__title Подписывайтесь на наш Instagram
+				a.s-link__link(href="https://www.instagram.com/mimargroup.uz/")
+					img.s-link__img(src="/images/instagram.svg") 
+		<!-- START SECTION LINK -->
+	<!-- END CONTENT VALUES -->
+
+	<!-- START CONTENT CAREER -->
+	.content.content__career
+		<!-- START SECTION FIRST-SCREEN-SECONDARY -->
+		.section.s-first-screen-secondary 
+			.container
+				.s-first-screen-secondary__inner
+					.s-first-screen-secondary__content.s-first-screen-secondary__content--medium 
+						.s-first-screen-secondary__title.title КАРЬЕРА В MIMAR GROUP
+						.s-first-screen-secondary__text 
+							p Присоединяйтесь к команде профессионалов! Мы рады предложить вам развитие в различных направлениях работы.
+					.s-first-screen-secondary-img-wrapper 
+						img(src="/images/career-bg.svg") 
+		<!-- END SECTION FIRST-SCREEN-SECONDARY -->
+
+		<!-- START SECTION DIRECTION -->
+		.section.s-direction.section--long 
+			.container 
+				.title-second.title-second--mb-medium Наши направления
+				.s-direction__image-titled-blocks 
+					+image-titled-block('/images/architecture.svg', 'Архитектура', 'Ведущие специалисты — мозг нашей компании создающие и реализующие новшества')
+					+image-titled-block('/images/engineers.svg', 'Инжиниринг', 'Специалисты, чья работа связана с чертежами, формулами для обеспечения качественной работы строительства')
+					+image-titled-block('/images/hr.svg', 'HR', 'Группа активных специалистов ежедневно вкладывающие усилия для функционирования компании, тем самым повышая ценность компании на рынке')
+					+image-titled-block('/images/jurisprudence.svg', 'Юриспруденция', 'Специалисты, обеспечивающие законность организации MIMAR GROUP на уровне нашего государства')
+					+image-titled-block('/images/finance.svg', 'Финансы и бухгалтерия', 'Денежные обороты проводятся с помощью их рук. Самые внимательные люди собраны в одной команде.')
+					+image-titled-block('/images/logistics.svg', 'Снабжение и логистика', 'Специалисты, управляющие обеспечением материалов и товаров своевременно для полноценной деятельности компании')
+					+image-titled-block('/images/department.svg', 'Коммерческий департамент', 'Наша внешняя коммуникация, знающая все о наших клиентах и партнёрах, готовые предложить и рассмотреть выгодные предложения')
+					+image-titled-block('/images/marketing.svg', 'Marketing/PR', 'Специалисты, принимающие участие в создании, выводе на рынок, продвижении, презентации, реализации товаров или услуг')
+		<!-- END SECTION CAREER -->
+
+		<!-- START SECTION VIDEO -->
+		.section.s-video.section--long-pb
+			.container
+				.title-second.title-second--mb-medium Посмотрите видео о нас
+				+video("7hu8ip4dbj8", "/images/video-bg.jpg")
+		<!-- END SECTION VIDEO -->
+
+		<!-- START SECTION LINK -->
+		.section.s-link.section--short-pb
+			.container 
+				.s-link__title Подписывайтесь на наш Instagram
+				a.s-link__link(href="https://www.instagram.com/mimargroup.uz/")
+					img.s-link__img(src="/images/instagram.svg") 
+		<!-- START SECTION LINK -->
+	<!-- END CONTENT CAREER -->
+
+	<!-- START CONTENT PROGRAM -->
+	.content.content__program
+		<!-- START SECTION FIRST-SCREEN-SECONDARY -->
+		.section.s-first-screen-secondary 
+			.container
+				.s-first-screen-secondary__inner
+					.s-first-screen-secondary__content.s-first-screen-secondary__content--long 
+						.s-first-screen-secondary__title.title MIMAR GRADUATE PROGRAM
+						.s-first-screen-secondary__text 
+							p Это возможность для студентов старших курсов и выпускников получить профессиональный опыт и начать свою карьеру в одной из крупнейшей строительной компании в Узбекистане. Стажировка в MIMAR GROUP поможет сделать первые шаги для достижения поставленной цели.
+					.s-first-screen-secondary-img-wrapper 
+						img(src="/images/program-bg.svg") 
+		<!-- END SECTION FIRST-SCREEN-SECONDARY -->
+
+		<!-- START SECTION FIND -->
+		.section.s-find.section--long 
+			.container 
+				.title-second.title-second--mb-short Найди своё направление
+				.s-find__text 
+					p MIMAR Group, следуя своей кадровой политике, уделяет большое внимание трудоустройству молодых специалистов, созданию возможностей для их профессионального и личностного роста.  Наша программа MIMAR Graduate дает возможность развиваться  с лучшими международными  специалистами.
+				.s-find__inner
+					.s-find-card
+						.s-find-card__image-wrapper 
+							img(src="/images/find-card-one.jpg")
+						.s-find-card__title Business-стажировки
+						.s-find-card__text 
+							p Коммерческий департамент
+						.s-find-card__text 
+							p Финансовый департамент
+						.s-find-card__text 
+							p HR-департамент
+						.s-find-card__text 
+							p Снабжение и логистика
+						.s-find-card__text 
+							p Маркетинг
+						.s-find-card__text 
+							p Юридический департамент
+						a.s-find-card__link(href="") Узнать больше
+					.s-find-card
+						.s-find-card__image-wrapper 
+							img(src="/images/find-card-two.jpg")
+						.s-find-card__title Архитектура и Инженерия
+						.s-find-card__text 
+							p Архитектура и дизайн
+						.s-find-card__text 
+							p Проектирование
+						.s-find-card__text 
+							p Инженерные специальности
+						.s-find-card__text 
+							p Геодезия
+						a.s-find-card__link(href="") Узнать больше
+		<!-- END SECTION FIND -->
+
+		<!-- START SECTION VIDEO -->
+		.section.s-video.section--long-pb
+			.container
+				.title-second.title-second--mb-medium Посмотрите видео о нас
+				+video("7hu8ip4dbj8", "/images/video-bg.jpg")
+		<!-- END SECTION VIDEO -->
+
+		<!-- START SECTION LINK -->
+		.section.s-link.section--short-pb
+			.container 
+				.s-link__title Подписывайтесь на наш Instagram
+				a.s-link__link(href="https://www.instagram.com/mimargroup.uz/")
+					img.s-link__img(src="/images/instagram.svg") 
+		<!-- START SECTION LINK -->
+	<!-- END CONTENT PROGRAM -->
+
+

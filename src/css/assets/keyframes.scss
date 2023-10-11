@@ -1,0 +1,168 @@
+@keyframes burger-top-open {
+	0% {
+		top: 0;
+		transform: rotate(0);
+	}
+	50% {
+		top: 50%;
+		transform: rotate(0) translateY(-50%);
+	}
+	100% {
+		top: 50%;
+		transform: rotate(45deg) translateY(-50%);
+	}
+}
+
+@keyframes burger-top-close {
+	0% {
+		top: 50%;
+		transform: rotate(45deg) translateY(-50%);
+	}
+	50% {
+		top: 50%;
+		transform: rotate(0deg) translateY(-50%);
+	}
+	100% {
+		top: 0;
+		transform: rotate(0deg);
+	}
+}
+
+@keyframes burger-bottom-open {
+	0% {
+		bottom: 0;
+		transform: rotate(0);
+	}
+	50% {
+		bottom: 50%;
+		transform: rotate(0) translateY(-50%);
+	}
+	100% {
+		bottom: 50%;
+		transform: rotate(135deg) translateY(-50%);
+	}
+}
+
+@keyframes burger-bottom-close {
+	0% {
+		bottom: 50%;
+		transform: rotate(135deg) translateY(-50%);
+	}
+	50% {
+		bottom: 50%;
+		transform: rotate(0) translateY(-50%);
+	}
+	100% {
+		bottom: 0;
+		transform: rotate(0);
+	}
+}
+
+@keyframes burger-middle-open {
+	50% {
+		transform: scale(0);
+	}
+	100% {
+		transform: scale(0);
+	}
+}
+
+@keyframes burger-middle-close {
+	0% {
+		transform: scale(0);
+	}
+	50% {
+		transform: scale(0);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+@keyframes move {
+  0% {
+    left: 55%;
+    top: -28%;
+  }
+  35%{
+        transform: rotate(0deg);
+  }
+  40% {
+    transform: rotate(-20deg);
+    left: 72%;
+    top: 6%;
+  }
+}
+
+@keyframes move-two {
+  0% {
+		top: 65%;
+    left: 51%;
+  }
+  50% {
+    left: 42%;
+    top: 50%;
+  }
+}
+
+@keyframes move-three {
+  0% {
+		left: 85%;
+    top: 11%;
+  }
+  50% {
+    left: 81%;
+    top: 18%;
+  }
+}
+
+@keyframes move-four {
+  0% {
+		top: 73%;
+    left: 64%;
+  }
+  50% {
+		top: 50%;
+    left: 77%;
+  }
+}
+
+@keyframes move-five {
+  0% {
+		left: 88%;
+    top: -45%;
+  }
+	60% {
+		left: 54%;
+    top: -3%;
+  }
+	100% {
+		transform: rotate(40deg);
+		left: 30%;
+    top: 10%;
+  }
+}
+
+@keyframes slideInChrome {
+  0% {
+    transform: translateX(100vw);
+  }
+  55% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInChromeLeft {
+  0% {
+    transform: translateX(-100vw);
+  }
+  55% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
